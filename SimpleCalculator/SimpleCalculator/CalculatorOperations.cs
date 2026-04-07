@@ -25,8 +25,11 @@ namespace SimpleCalculator {
         }
 
         public double Power(double a, double b) {
-            return 0;
+            return Math.Pow(a, b);
+        }
+
+        public double SquareRoot(double a) {
+            return Math.Sqrt(a);
         }
     }
 }
-
