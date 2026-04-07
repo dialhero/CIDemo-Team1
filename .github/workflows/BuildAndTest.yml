@@ -51,6 +51,6 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: calculator-app
-        path: ./publish
+        path: ./SimpleCalculator/publish
 
       
