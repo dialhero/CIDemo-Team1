@@ -11,7 +11,7 @@
 
             while (keepRunning)
             {
-                Console.WriteLine("\nEnter expression (examples: 12+7, 20/5, 2^8, sqrt(81) or sqrt81):");
+                Console.WriteLine("\nEnter expression (examples: 12+7, 50-12, 20/5, 2^8, sqrt(81) or sqrt81):");
                 var expression = (Console.ReadLine() ?? string.Empty).Replace(" ", "");
 
                 if (expression.StartsWith("sqrt", StringComparison.OrdinalIgnoreCase))
@@ -79,7 +79,7 @@
                                 }
                                 catch (DivideByZeroException)
                                 {
-                                    Console.Write("\n*************************************************");
+                                    //Console.Write("\n*************************************************");
                                     Console.WriteLine("\nCannot divide by zero.");
                                     Console.Write("*************************************************\n");
                                 }
@@ -97,6 +97,8 @@
                         Console.WriteLine("\nInvalid expression format.");
                     }
                 }
+                Console.Write("Do another calculation? (y/n): ");
+                keepRunning = string.Equals(Console.ReadLine(), "y", StringComparison.OrdinalIgnoreCase);
             }
         }
     }
