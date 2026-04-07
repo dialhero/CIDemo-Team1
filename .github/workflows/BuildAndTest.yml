@@ -34,7 +34,6 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
-    working-directory: SimpleCalculator
     
     steps:
     - uses: actions/checkout@v4
@@ -46,6 +45,7 @@ jobs:
     
     - name: Publish
       run: dotnet publish -c Release -o ./publish
+      working-directory: SimpleCalculator
     
     - name: Upload artifact
       uses: actions/upload-artifact@v4
