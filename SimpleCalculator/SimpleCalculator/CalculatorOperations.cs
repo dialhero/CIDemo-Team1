@@ -23,5 +23,9 @@ namespace SimpleCalculator {
 
             return (double)a / (double)b;
         }
+
+        public double Power(double a, double b) {
+            return 0;
+        }
     }
 }
