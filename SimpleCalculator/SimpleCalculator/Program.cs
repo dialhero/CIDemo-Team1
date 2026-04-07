@@ -16,7 +16,7 @@
                 Console.Write("\nEnter the first number: ");
                 var inputA = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Enter the operator: ");
+                Console.Write("\nEnter the operator: ");
                 var inputOperator = Console.ReadLine()?.Trim().ToLowerInvariant();
 
                 if (inputOperator == "sqrt")
